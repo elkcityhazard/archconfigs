@@ -19,7 +19,25 @@ let lspServers = [
       \   filetype: 'vim',
       \   path: '/usr/sbin/vim-language-server',
       \   args: ['--stdio']
-      \ }
+      \ },
+      \ #{
+	    \    name: 'typescriptlang',
+	    \    filetype: ['javascript', 'typescript'],
+	    \    path: '/usr/sbin/typescript-language-server',
+      \    args: ['--stdio'],
+	    \  },
+      \ #{
+      \    name: 'clangd',
+      \    filetype: ['c', 'cpp'],
+      \    path: '/usr/sbin/clangd',
+      \    args: ['--background-index']
+      \  },
+      \ #{
+      \   name: "vscode-html-languageserver",
+      \   filetype: ['html','gohtml'],
+      \   path: '/usr/sbin/vscode-html-languageserver',
+      \   args:['--stdio'] 
+      \  }
       \ ]
 
 autocmd User LspSetup call LspAddServer(lspServers)

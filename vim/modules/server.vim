@@ -1,3 +1,6 @@
+set encoding=utf-8
+set nobackup
+set nowritebackup
 set fileformat=unix
 filetype plugin indent on
 set expandtab
