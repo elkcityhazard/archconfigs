@@ -12,6 +12,10 @@ debug {
 	honor-xdg-activation-with-invalid-serial
 	wait-for-frame-completion-before-queueing
 }
+environment {
+  ELECTRON_OZONE_PLATFORM_HINT "auto"
+  DISPLAY ":0"
+}
 
 
 
@@ -344,6 +348,12 @@ window-rule {
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
+}
+
+window-rule {
+    match app-id=r#"^uk\.co\.screamingfrog\.seospider\.ui\.id[0-9]*$"#
+    open-floating true
+
 }
 
 // Example: block out two password managers from screen capture.
