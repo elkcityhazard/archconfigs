@@ -1,10 +1,13 @@
 function s:sourceModules()
-  let files = globpath('./modules','*',1,1)
+
+  let l:basePath   = expand('<sfile>:p:h')
+  let l:modulePath = '/.config/vim/modules'
+  let l:fullPath   = l:basePath . l:modulePath
+  let files = globpath(l:fullPath, '*.vim',1,1)
   for f in files
-    let cwd = getcwd()
-    let splitstr = f[1:len(f)-1]
-    let module = cwd  . splitstr
-    exe 'source' module
+	echo f
+    let l:splitstr = f[1:len(f)-1]
+    exe 'source' f
   endfor
 endfunction
 
