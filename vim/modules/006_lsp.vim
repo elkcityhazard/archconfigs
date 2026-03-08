@@ -37,6 +37,13 @@ let lspServers = [
       \   filetype: ['html','gohtml'],
       \   path: '/usr/sbin/vscode-html-languageserver',
       \   args:['--stdio'] 
+      \  },
+      \ #{
+      \   name: 'docker-compose',
+      \   filetype: ['yaml.docker-compose'],
+      \   path: '/usr/bin/docker-compose-langserver',
+      \   args: ['--stdio'],
+      \   rootPatterns: ['.git','.env','docker-compose.yml','docker-compose.yaml','compose.yml','compose.yaml'],
       \  }
       \ ]
 
