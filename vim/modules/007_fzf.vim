@@ -7,11 +7,11 @@ nnoremap <leader>ph :Helptags<CR>
 nnoremap <leader>ps :Rg<Space>
 
 " Grep current string
-nnoremap <leader>fs :Rg <C-r><C-w><CR>
+nnoremap <leader>fs :Rg 'RG '<C-r><C-w><CR>
 
 
 " Grep for current file name (without extension)
-nnoremap <leader>pc :execute 'Rg ' . expand('%:t:r')<CR>
+nnoremap <leader>pc :execute 'RipGrep ' . expand('%:t:r')<CR>
 
 " Find files in your Vim config
 nnoremap <leader>pi :Files ~/.config/vim<CR>
