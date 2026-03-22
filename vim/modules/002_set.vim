@@ -15,7 +15,7 @@ set textwidth=100
 set sidescroll=5
 set listchars+=precedes:<,extends:>
 set filetype=on
-
+set clipboard=unnamedplus,unnamed
 " key maps
 
 " delete and move up or down
