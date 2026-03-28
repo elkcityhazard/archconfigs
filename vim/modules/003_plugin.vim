@@ -22,3 +22,8 @@ call s:ensure('yegappan/lsp')
 call s:ensure('neoclide/coc.nvim')
 call s:ensure('neoclide/coc-sources')
 call s:ensure('vim-autoformat/vim-autoformat')
+
+
+if &filetype ==# 'go'
+  call s:ensure('fatih/vim-go')
+endif
