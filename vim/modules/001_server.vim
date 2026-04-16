@@ -109,4 +109,5 @@ iab dicker docker
 iab <buffer> ien@ if err != nil {<cr><cr>{PLACEHOLDER}}<cr>}<cr><esc>?{PLACEHOLDER}<cr>viwDki
 
 
+nnoremap <leader>up :source ~/.config/vim/modules/012_update_funcs.vim<CR>
 
