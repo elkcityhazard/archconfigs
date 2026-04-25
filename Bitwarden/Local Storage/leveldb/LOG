@@ -1,0 +1,3 @@
+2026/04/25-17:11:28.906 51b3 Reusing MANIFEST /home/andrew/.config/Bitwarden/Local Storage/leveldb/MANIFEST-000001
+2026/04/25-17:11:28.910 51b3 Recovering log #3
+2026/04/25-17:11:28.910 51b3 Reusing old log /home/andrew/.config/Bitwarden/Local Storage/leveldb/000003.log 

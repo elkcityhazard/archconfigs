@@ -1,0 +1,53 @@
+[
+    {
+        "display_name": "",
+        "enabled": true,
+        "encoders": [],
+        "id": "",
+        "module_name": "obs-wayland-hotkeys",
+        "outputs": [],
+        "services": [],
+        "sources": [],
+        "version": ""
+    },
+    {
+        "display_name": "",
+        "enabled": true,
+        "encoders": [
+            "obs-va-vah264lpenc",
+            "obs-va-vah265lpenc",
+            "obs-va-vah264enc",
+            "obs-va-vah265enc"
+        ],
+        "id": "",
+        "module_name": "obs-vaapi",
+        "outputs": [],
+        "services": [],
+        "sources": [],
+        "version": ""
+    },
+    {
+        "display_name": "linux-vkcapture",
+        "enabled": true,
+        "encoders": [],
+        "id": "",
+        "module_name": "linux-vkcapture",
+        "outputs": [],
+        "services": [],
+        "sources": [
+            "vkcapture-source"
+        ],
+        "version": ""
+    },
+    {
+        "display_name": "",
+        "enabled": true,
+        "encoders": [],
+        "id": "",
+        "module_name": "wlrobs",
+        "outputs": [],
+        "services": [],
+        "sources": [],
+        "version": ""
+    }
+]

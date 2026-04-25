@@ -1,0 +1,238 @@
+17:54:30.998: Platform: Wayland
+17:54:30.998: CPU Name: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+17:54:30.998: CPU Speed: 4599.953MHz
+17:54:30.999: Physical Cores: 8, Logical Cores: 16
+17:54:30.999: Physical Memory: 31816MB Total, 23708MB Free
+17:54:30.999: Kernel Version: Linux 6.19.13-arch1-1
+17:54:30.999: Distribution: "Arch Linux" Unknown
+17:54:30.999: Desktop Environment: GNOME (gnome)
+17:54:30.999: Session Type: wayland
+17:54:31.000: Current Date/Time: 2026-04-24, 05:54:30 PM
+17:54:31.000: Browser Hardware Acceleration: true
+17:54:31.000: Qt Version: 6.11.0 (runtime), 6.11.0 (compiled)
+17:54:31.000: Portable mode: false
+17:54:31.019: OBS 32.1.2 (linux)
+17:54:31.019: ---------------------------------
+17:54:31.020: ---------------------------------
+17:54:31.020: audio settings reset:
+17:54:31.020: 	samples per sec: 48000
+17:54:31.020: 	speakers:        2
+17:54:31.020: 	max buffering:   960 milliseconds
+17:54:31.020: 	buffering type:  dynamically increasing
+17:54:31.021: ---------------------------------
+17:54:31.021: Initializing OpenGL...
+17:54:31.021: Using EGL/Wayland
+17:54:31.071: Initialized EGL 1.5
+17:54:31.149: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA T1200 Laptop GPU/PCIe/SSE2
+17:54:31.149: OpenGL loaded successfully, version 3.3.0 NVIDIA 595.58.03, shading language 3.30 NVIDIA via Cg compiler
+17:54:31.168: ---------------------------------
+17:54:31.168: video settings reset:
+17:54:31.168: 	base resolution:   1920x1080
+17:54:31.168: 	output resolution: 1280x720
+17:54:31.168: 	downscale filter:  Bicubic
+17:54:31.168: 	fps:               30/1
+17:54:31.168: 	format:            NV12
+17:54:31.168: 	YUV mode:          Rec. 709/Partial
+17:54:31.168: NV12 texture support enabled
+17:54:31.168: P010 texture support not available
+17:54:31.168: Audio monitoring device:
+17:54:31.168: 	name: Default
+17:54:31.168: 	id: default
+17:54:31.169: ---------------------------------
+17:54:31.171: Failed to load 'en-US' text for module: 'decklink-captions.so'
+17:54:31.172: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+17:54:31.173: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+17:54:31.173: Failed to initialize module 'decklink.so'
+17:54:31.173: os_dlopen(/usr/lib/obs-plugins/frontend-tools.so->/usr/lib/obs-plugins/frontend-tools.so): libluajit-5.1.so.2: cannot open shared object file: No such file or directory
+17:54:31.173: 
+17:54:31.173: Module '/usr/lib/obs-plugins/frontend-tools.so' not loaded
+17:54:31.214: [pipewire] Available capture sources:
+17:54:31.214: [pipewire]     - Monitor source
+17:54:31.214: [pipewire]     - Window source
+17:54:31.222: v4l2loopback not installed, virtual camera not registered
+17:54:31.224: [linux-vkcapture] plugin loaded successfully (version 1.5.5)
+17:54:31.239: [obs-browser]: Version 2.26.8
+17:54:31.239: [obs-browser]: CEF Version 146.0.7680.179 (runtime), 146.0.11+g3a0fcf1+chromium-146.0.7680.179 (compiled)
+17:54:31.239: [obs-browser]: Blacklisted driver detected, disabling browser source hardware acceleration.
+17:54:31.251: LIBVA_DRIVER_NAME variable is set, this could prevent FFmpeg VAAPI from working correctly
+17:54:31.254: VAAPI: API version 1.23
+17:54:31.255: FFmpeg VAAPI H264 encoding supported
+17:54:31.257: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+17:54:31.257: FFmpeg VAAPI AV1 encoding not supported
+17:54:31.259: FFmpeg VAAPI HEVC encoding supported
+17:54:31.576: [obs-nvenc] NVENC version: 13.0 (compiled) / 13.0 (driver), CUDA driver version: 13.20, AV1 supported: false
+17:54:31.587: [obs-vaapi] version: 0.4.2, gst-runtime: 1.28.2
+17:54:31.593: [obs-vaapi] found vah265enc
+17:54:31.593: [obs-vaapi] found vah264enc
+17:54:31.593: [obs-vaapi] found vah265lpenc
+17:54:31.593: [obs-vaapi] found vah264lpenc
+17:54:31.601: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.7.3 | RPC Version: 1)
+17:54:31.601: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.11.0 | Qt version (run-time): 6.11.0
+17:54:31.601: [obs-websocket] [obs_module_load] Linked ASIO Version: 103800
+17:54:31.605: [obs-websocket] [obs_module_load] Module loaded.
+17:54:31.607: ---------------------------------
+17:54:31.607:   Loaded Modules:
+17:54:31.607:     text-freetype2.so
+17:54:31.607:     rtmp-services.so
+17:54:31.607:     obs-x264.so
+17:54:31.607:     obs-websocket.so
+17:54:31.607:     obs-webrtc.so
+17:54:31.607:     obs-wayland-hotkeys.so
+17:54:31.607:     obs-vst.so
+17:54:31.607:     obs-vaapi.so
+17:54:31.607:     obs-transitions.so
+17:54:31.607:     obs-qsv11.so
+17:54:31.607:     obs-outputs.so
+17:54:31.607:     obs-nvenc.so
+17:54:31.607:     obs-libfdk.so
+17:54:31.607:     obs-filters.so
+17:54:31.607:     obs-ffmpeg.so
+17:54:31.607:     obs-browser.so
+17:54:31.607:     linux-vkcapture.so
+17:54:31.607:     linux-v4l2.so
+17:54:31.607:     linux-pulseaudio.so
+17:54:31.607:     linux-pipewire.so
+17:54:31.607:     linux-jack.so
+17:54:31.607:     linux-capture.so
+17:54:31.607:     linux-alsa.so
+17:54:31.607:     image-source.so
+17:54:31.607:     decklink-output-ui.so
+17:54:31.607:     decklink-captions.so
+17:54:31.607: ---------------------------------
+17:54:31.608: ---------------------------------
+17:54:31.608: Available Encoders:
+17:54:31.608:   Video Encoders:
+17:54:31.608: 	- ffmpeg_svt_av1 (SVT-AV1)
+17:54:31.608: 	- ffmpeg_aom_av1 (AOM AV1)
+17:54:31.608: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+17:54:31.608: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+17:54:31.608: 	- obs_nvenc_h264_tex (NVIDIA NVENC H.264)
+17:54:31.608: 	- obs_nvenc_hevc_tex (NVIDIA NVENC HEVC)
+17:54:31.608: 	- obs_qsv11_v2 (QuickSync H.264)
+17:54:31.608: 	- obs_qsv11_hevc (QuickSync HEVC)
+17:54:31.615: 	- obs-va-vah265enc (VAAPI H.265 on TigerLake-H GT1 [UHD Graphics])
+17:54:31.622: 	- obs-va-vah264enc (VAAPI H.264 on TigerLake-H GT1 [UHD Graphics])
+17:54:31.627: 	- obs-va-vah265lpenc (VAAPI H.265 on TigerLake-H GT1 [UHD Graphics] (Low Power))
+17:54:31.632: 	- obs-va-vah264lpenc (VAAPI H.264 on TigerLake-H GT1 [UHD Graphics] (Low Power))
+17:54:31.632: 	- obs_x264 (x264)
+17:54:31.632:   Audio Encoders:
+17:54:31.632: 	- ffmpeg_aac (FFmpeg AAC)
+17:54:31.632: 	- ffmpeg_opus (FFmpeg Opus)
+17:54:31.632: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+17:54:31.632: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+17:54:31.632: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+17:54:31.632: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+17:54:31.632: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+17:54:31.632: 	- libfdk_aac (libfdk AAC)
+17:54:31.632: ==== Startup complete ===============================================
+17:54:31.683: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+17:54:31.683: All scene data cleared
+17:54:31.683: ------------------------------------------------
+17:54:31.689: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+17:54:31.689: Deduplication logic is being applied to all monitored sources.
+17:54:31.689: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.4) 15.0.0'
+17:54:31.690: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+17:54:31.690: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor' (default)
+17:54:31.690: [Loaded global audio device]: 'Desktop Audio'
+17:54:31.691: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.4) 15.0.0'
+17:54:31.691: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+17:54:31.691: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo' (default)
+17:54:31.691: [Loaded global audio device]: 'Mic/Aux'
+17:54:31.691: PipeWire initialized
+17:54:31.693: Switched to scene 'Scene'
+17:54:31.693: ------------------------------------------------
+17:54:31.693: Loaded scenes:
+17:54:31.693: - scene 'Scene':
+17:54:31.693:     - source: 'Screen Capture (PipeWire)' (pipewire-screen-capture-source)
+17:54:31.693: ------------------------------------------------
+17:54:31.747: [pipewire] Screencast session created
+17:54:31.764: [pipewire] Asking for monitor and window
+17:54:31.777: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+17:54:31.777: Deduplication logic is being applied to all monitored sources.
+17:54:31.797: [pipewire] source selected, setting up screencast
+17:54:31.803: [pipewire] Server version: 1.6.4
+17:54:31.803: [pipewire] Library version: 1.6.4
+17:54:31.803: [pipewire] Header version: 1.6.3
+17:54:31.804: [pipewire] Created stream 0x560daad06c20
+17:54:31.804: [pipewire] Stream 0x560daad06c20 state: "connecting" (error: none)
+17:54:31.804: [pipewire] Playing stream 0x560daad06c20
+17:54:31.805: [pipewire] Stream 0x560daad06c20 state: "paused" (error: none)
+17:54:31.844: [pipewire] Negotiated format:
+17:54:31.844: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+17:54:31.844: [pipewire]     Modifier: 0x0
+17:54:31.844: [pipewire]     Size: 1920x1080
+17:54:31.844: [pipewire]     Framerate: 0/1
+17:54:31.845: [pipewire] Negotiated format:
+17:54:31.845: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+17:54:31.845: [pipewire]     Modifier: 0x0
+17:54:31.845: [pipewire]     Size: 1920x1080
+17:54:31.845: [pipewire]     Framerate: 0/1
+17:54:31.865: [pipewire] Stream 0x560daad06c20 state: "streaming" (error: none)
+17:54:31.882: glEGLImageTargetTexture2DOES failed, glGetError returned GL_INVALID_OPERATION(0x502)
+17:54:31.882: [pipewire] Renegotiating stream
+17:54:31.883: [pipewire] Stream 0x560daad06c20 state: "paused" (error: none)
+17:54:31.883: [pipewire] Negotiated format:
+17:54:31.883: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+17:54:31.883: [pipewire]     Modifier: 0xffffffffffffff
+17:54:31.883: [pipewire]     Size: 1920x1080
+17:54:31.883: [pipewire]     Framerate: 0/1
+17:54:31.885: [pipewire] Negotiated format:
+17:54:31.885: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+17:54:31.885: [pipewire]     Modifier: 0xffffffffffffff
+17:54:31.885: [pipewire]     Size: 1920x1080
+17:54:31.885: [pipewire]     Framerate: 0/1
+17:54:31.895: [pipewire] Stream 0x560daad06c20 state: "streaming" (error: none)
+17:54:31.906: glEGLImageTargetTexture2DOES failed, glGetError returned GL_INVALID_OPERATION(0x502)
+17:54:31.906: [pipewire] Renegotiating stream
+17:54:31.906: [pipewire] Stream 0x560daad06c20 state: "paused" (error: none)
+17:54:31.907: [pipewire] Negotiated format:
+17:54:31.907: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:54:31.907: [pipewire]     Modifier: 0xffffffffffffff
+17:54:31.907: [pipewire]     Size: 1920x1080
+17:54:31.907: [pipewire]     Framerate: 0/1
+17:54:31.909: [pipewire] Negotiated format:
+17:54:31.909: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:54:31.909: [pipewire]     Modifier: 0x0
+17:54:31.909: [pipewire]     Size: 1920x1080
+17:54:31.909: [pipewire]     Framerate: 0/1
+17:54:31.922: [pipewire] Stream 0x560daad06c20 state: "streaming" (error: none)
+17:54:31.928: glEGLImageTargetTexture2DOES failed, glGetError returned GL_INVALID_OPERATION(0x502)
+17:54:31.928: [pipewire] Renegotiating stream
+17:54:31.928: [pipewire] Stream 0x560daad06c20 state: "paused" (error: none)
+17:54:31.929: [pipewire] Negotiated format:
+17:54:31.929: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:54:31.929: [pipewire]     Modifier: 0xffffffffffffff
+17:54:31.929: [pipewire]     Size: 1920x1080
+17:54:31.929: [pipewire]     Framerate: 0/1
+17:54:31.931: [pipewire] Negotiated format:
+17:54:31.931: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+17:54:31.931: [pipewire]     Modifier: 0xffffffffffffff
+17:54:31.931: [pipewire]     Size: 1920x1080
+17:54:31.931: [pipewire]     Framerate: 0/1
+17:54:31.941: [pipewire] Stream 0x560daad06c20 state: "streaming" (error: none)
+17:54:31.961: glEGLImageTargetTexture2DOES failed, glGetError returned GL_INVALID_OPERATION(0x502)
+17:54:31.961: [pipewire] Renegotiating stream
+17:54:31.962: [pipewire] Stream 0x560daad06c20 state: "paused" (error: none)
+17:54:31.962: [pipewire] Negotiated format:
+17:54:31.962: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+17:54:31.962: [pipewire]     Size: 1920x1080
+17:54:31.962: [pipewire]     Framerate: 0/1
+17:54:31.965: [pipewire] Stream 0x560daad06c20 state: "streaming" (error: none)
+17:54:32.321: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+17:54:32.321: 
+17:54:33.963: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 with focusing surface 0x560dad68ea30
+17:55:16.416: ==== Shutting down ==================================================
+17:55:16.478: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+17:55:16.478: pulse-input: Got 1788 packets with 2145600 frames
+17:55:16.478: Deduplication logic stopped.
+17:55:16.487: pulse-input: Stopped recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo'
+17:55:16.487: pulse-input: Got 1787 packets with 2144400 frames
+17:55:16.488: [pipewire] Stream 0x560daad06c20 state: "paused" (error: none)
+17:55:16.489: [pipewire] Stream 0x560daad06c20 state: "unconnected" (error: none)
+17:55:16.546: All scene data cleared
+17:55:16.546: ------------------------------------------------
+17:55:16.632: [obs-websocket] [obs_module_unload] Shutting down...
+17:55:16.632: Tried to call obs_frontend_remove_event_callback with no callbacks!
+17:55:16.632: [obs-websocket] [obs_module_unload] Finished shutting down.
+17:55:16.633: [linux-vkcapture] plugin unloaded
+17:55:16.634: Freeing OBS context data

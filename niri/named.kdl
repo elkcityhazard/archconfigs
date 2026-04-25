@@ -1,0 +1,6 @@
+workspace "Terminal"
+workspace "Browser"
+workspace "Code"
+workspace "Media"
+workspace "Messages"
+
