@@ -24,7 +24,6 @@
       "memory",
       "temperature",
       "backlight",
-      "keyboard-state",
       "battery",
       "clock",
       "tray",
@@ -33,14 +32,15 @@
     "niri/workspaces": {
       "disable-scroll": true,
       "all-outputs": true,
-      "warp-on-scroll": false,
-      "format": "{value} : {icon}",
+      "warp-on-scroll": true,
+      "format":"{icon} {name}",
       "format-icons": {
-        "1": "",
+        "1": " ",
         "2": "",
-        "3": "",
-        "4": "",
-        "5": "",
+        "3": "󰇮",
+        "4": "",
+        "5": "",
+        "6": "",
         "urgent": "",
         "focused": "",
         "default": ""
@@ -99,24 +99,25 @@
       }
     },
     "tray": {
-      "icon-size": 21,
+      "icon-size": 14,
       "spacing": 10,
-        // "icons": {
-        //   "blueman": "bluetooth",
-        //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
-        // }
     },
     "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+      "timezone": "America/New_York",
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
+      "exec-if": "btop",
       "format": "{usage}% ",
-      "tooltip": false
+      "tooltip": true,
+      "on-click": "/usr/sbin/alacritty -e btop"
     },
     "memory": {
-      "format": "{}% "
+      "exec-if": "btop",
+      "format": "{}% ",
+      "tooltip": true,
+      "on-click": "/usr/sbin/alacritty -e btop"
     },
     "temperature": {
       "thermal-zone": 2,
@@ -133,16 +134,16 @@
     },
     "battery": {
       "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
+        "good": 95,
+        "warning": 30,
+        "critical": 15
       },
       "format": "{capacity}% {icon}",
       "format-full": "{capacity}% {icon}",
-      "format-charging": "{capacity}% ",
+      "format-charging": "{capacity}% ",
       "format-plugged": "{capacity}% ",
       "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
+      "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
@@ -167,31 +168,30 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-          "headphone": "",
-          "hands-free": "",
-          "headset": "",
-          "phone": "",
-          "portable": "",
-          "car": "",
-          "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
+      "scroll-step": 1, // %, can be a float
+      "format": "{volume}% {icon} {format_source}",
+      "format-bluetooth": "{volume}% {icon} {format_source}",
+      "format-bluetooth-muted": " {icon} {format_source}",
+      "format-muted": " {format_source}",
+      "format-source": "{volume}% ",
+      "format-source-muted": "",
+      "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "󰋎",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", "", " "]
+      },
+      "on-click": "pavucontrol"
     },
     "custom/media": {
       "format": "{icon} {text}",
       "return-type": "json",
       "max-length": 40,
       "format-icons": {
-        "spotify": "",
-        "default": "🎜"
+        "spotify": " ",
       },
       "escape": true,
       "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
@@ -203,9 +203,9 @@
       "menu": "on-click",
       "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
       "menu-actions": {
-        "logout": "loginctl kill-user $(whoami)",
-        "shutdown": "shutdown",
-        "reboot": "reboot",
+        "logout": "loginctl terminate-user $(whoami)",
+        "shutdown": "poweroff",
+        "reboot": "sudo reboot",
         "suspend": "systemctl suspend",
         "hibernate": "systemctl hibernate"
       }
@@ -216,7 +216,7 @@
       "exec":"~/.config/scripts/checkupdates.sh",
       "return_type": "json",
       "format":"<span color=\"orange\">{}</span>",
-      "on-click":"/usr/sbin/alacritty -e sudo pacman -Syyu"
+      "on-click":"/usr/sbin/alacritty -e /home/andrew/.config/scripts/getupdates.sh"
 
     }
 }

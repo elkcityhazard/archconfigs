@@ -48,7 +48,7 @@ button:hover {
 }
 
 #workspaces button {
-  padding: 0 5px;
+  padding: 0 6px;
   background-color: transparent;
   color: #c4a7e7;
 }
@@ -85,13 +85,18 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
-  padding: 0 10px;
+  padding: 0 6px;
   color: #ffffff;
+  transition: 350ms;
+}
+#cpu:hover,
+#memory:hover {
+  color: #e0def4;
 }
 
 #window,
 #workspaces {
-  margin: 0 4px;
+  margin: 0 6px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -106,6 +111,11 @@ button:hover {
 
 #clock {
   color: #3e8fb0;
+  transition: 350ms;
+}
+#battery:hover,
+#clock:hover {
+  color: #e0def4;
 }
 
 #battery,
@@ -137,7 +147,7 @@ button:hover {
 
 #power-profiles-daemon {
   color: #fff;
-  padding: 8px;
+  padding: 6px;
 }
 
 #power-profiles-daemon.performance {
@@ -273,14 +283,14 @@ label:focus {
 
 #keyboard-state > label {
   border-radius: 2.75rem;
-  margin-left: 2px;
-  margin-right: 2px;
-  padding: 0 8px;
+  margin-left: 6px;
+  margin-right: 6px;
+  padding: 0 6px;
 }
 
 #keyboard-state > label.locked {
   color: #ebbcba;
-  padding: 0 8px;
+  padding: 0 6px;
 }
 
 #scratchpad {
@@ -295,7 +305,7 @@ label:focus {
 }
 
 #privacy-item {
-  padding: 0 5px;
+  padding: 0 6px;
   color: white;
 }
 
@@ -306,4 +316,11 @@ label:focus {
 }
 
 #privacy-item.audio-out {
+}
+#custom-power {
+  color : #31748f;
+  transition: 350ms;
+}
+#custom-power:hover {
+  color: #e0def4;
 }
