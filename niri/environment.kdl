@@ -3,7 +3,6 @@
     XDG_SESSION_TYPE "wayland"
     LIBVA_DRIVER_NAME "iHD"
     VDPAU_DRIVER "va_gl"
-    render_device "/dev/dri/renderD129"
   }
 
   screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"

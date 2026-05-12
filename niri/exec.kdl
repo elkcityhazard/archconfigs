@@ -1,1 +1,2 @@
+spawn-at-startup "waybar"
 spawn-at-startup "~/.config/scripts/autostart.sh"
