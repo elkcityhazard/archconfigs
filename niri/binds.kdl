@@ -4,7 +4,9 @@ binds {
   Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
   Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
   Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+  Mod+s hotkey-overlay-title="Run an Application: Rofi" { spawn "rofi" "-show" "drun"; }
   Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+  Mod+Alt+Space hotkey-overlay-title="Run an Application: Rofi" { spawn "rofi" "-show" "drun"; }
   Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
   Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
@@ -106,6 +108,7 @@ binds {
   Mod+7 { focus-workspace 7; }
   Mod+8 { focus-workspace 8; }
   Mod+9 { focus-workspace 9; }
+  Mod+0 { focus-workspace 10; }
   Mod+Ctrl+1 { move-column-to-workspace 1; }
   Mod+Ctrl+2 { move-column-to-workspace 2; }
   Mod+Ctrl+3 { move-column-to-workspace 3; }
@@ -115,6 +118,7 @@ binds {
   Mod+Ctrl+7 { move-column-to-workspace 7; }
   Mod+Ctrl+8 { move-column-to-workspace 8; }
   Mod+Ctrl+9 { move-column-to-workspace 9; }
+  Mod+Ctrl+0 { move-column-to-workspace 10; }
 
   Mod+BracketLeft  { consume-or-expel-window-left; }
   Mod+BracketRight { consume-or-expel-window-right; }

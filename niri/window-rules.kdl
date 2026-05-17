@@ -1,9 +1,13 @@
 window-rule {
-  default-column-width {}
+  match app-id="mpv"
+  open-floating true
+  default-column-width {proportion 0.75;}
+  open-on-workspace "10"
 }
 
 window-rule {
   match app-id=r#"firefox$"# title="^Picture-in-Picture$"
   open-floating true
 }
+
 

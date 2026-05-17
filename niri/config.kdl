@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-// This config is in the KDL format: https://kdl.dev
-// "/-" comments out the following node.
-// Check the wiki for a full description of the configuration:
-// https://yalter.github.io/niri/Configuration:-Introduction
-
-include "./exec.kdl"
-include "./animations.kdl"
-include "./binds.kdl"
-include "./debug.kdl"
-include "./environment.kdl"
-include "./hotkey-overlay.kdl"
-include "./input.kdl"
-include "./layout.kdl"
-include "./monitorrule.kdl"
-include "./named.kdl"
-include "./window-rules.kdl"
-=======
 include "./debug.kdl"
 include "./monitorrule.kdl"
 include "./named.kdl"
@@ -27,4 +9,3 @@ include "./hotkey-overlay.kdl"
 include "./animations.kdl"
 include "./window-rules.kdl"
 include "./exec.kdl"
->>>>>>> b34144e (sync niri)
