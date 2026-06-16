@@ -1,9 +1,16 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-canUpdate=$(checkupdates | wc -l)
-
-if [ "$canUpdate" -gt 0 ]; then
-  echo "  ${canUpdate}"
-else
-  echo ""
+checkupdate_exists=$(which checkupdates | wc -l)
+update_count=$(checkupdates | wc -l)
+output=""
+if [ $checkupdate_exists -eq 0 ]; then
+  sudo pacman -S pacman-contrib --noconfirm
 fi
+
+if [ $update_count -gt 0 ]; then
+  output=$(echo "󰭽 $update_count")
+else
+  output=$(echo -e "")
+fi
+
+printf "%s" "$output"
